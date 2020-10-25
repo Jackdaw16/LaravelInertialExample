@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="" />
+    <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyInputError.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyLabel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Mixins/ComasyInput.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +28,9 @@
         <option value="Vue Single File Component" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -217,6 +231,7 @@
       <workItem from="1603540941108" duration="15116000" />
       <workItem from="1603569005160" duration="2233000" />
       <workItem from="1603635960641" duration="3876000" />
+      <workItem from="1603640077052" duration="10901000" />
     </task>
     <servers />
   </component>
@@ -224,22 +239,26 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603638943661">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603642069406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603638943661" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603638943661">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603642069406" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603640239050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603638943661" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603638943661">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603640239050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603638943661" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603638943661">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603640239050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603638943661" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603640239050">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1603031951842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

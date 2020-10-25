@@ -1,7 +1,6 @@
 <template>
     <button :type="type"
-            :class="classed"
-            @click="resultAlert()">
+            :class="classed">
         <slot></slot>
     </button>
 </template>
