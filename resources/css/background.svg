@@ -1,0 +1,10 @@
+<svg id="Grupo_11" data-name="Grupo 11" xmlns="http://www.w3.org/2000/svg" width="2067" height="1251" viewBox="0 0 2067 1251">
+  <rect id="Rectángulo_10" data-name="Rectángulo 10" width="1920" height="1080" fill="#090e11"/>
+  <g id="Grupo_2" data-name="Grupo 2" transform="translate(1412.127 668.127)">
+    <circle id="Elipse_1" data-name="Elipse 1" cx="255.5" cy="255.5" r="255.5" transform="translate(143.873 71.873)" fill="#131c21"/>
+    <circle id="Elipse_2" data-name="Elipse 2" cx="226.5" cy="226.5" r="226.5" transform="translate(172.873 100.873)" fill="#090e11"/>
+    <path id="Polígono_1" data-name="Polígono 1" d="M39.151,0,78.3,206.434H0Z" transform="matrix(0.643, -0.766, 0.766, 0.643, 198.15, 213.606)" fill="#131c21"/>
+    <path id="Polígono_2" data-name="Polígono 2" d="M39.151,0,78.3,206.434H0Z" transform="translate(600.597 442.921) rotate(130)" fill="#131c21"/>
+    <circle id="Elipse_3" data-name="Elipse 3" cx="64" cy="64" r="64" transform="translate(335.873 263.873)" fill="#131c21"/>
+  </g>
+</svg>
