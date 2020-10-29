@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/comasyIcon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Projects/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Projects/Index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -106,7 +100,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
@@ -134,7 +127,6 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
@@ -155,6 +147,9 @@
       <path value="$PROJECT_DIR$/vendor/inertiajs/inertia-laravel" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
     </include_path>
   </component>
   <component name="ProjectId" id="1imNfOc37LJOnTUY7sTlhSaYi0J" />
@@ -236,6 +231,7 @@
       <workItem from="1603714070915" duration="6761000" />
       <workItem from="1603803748703" duration="11830000" />
       <workItem from="1603910896324" duration="600000" />
+      <workItem from="1603992985107" duration="5548000" />
     </task>
     <servers />
   </component>
@@ -247,30 +243,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603642069406" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1603839932402">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="63" key="GridCell.Tab.0.bottom" timestamp="1603993077348">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="63" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
     <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1603839932402">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="63" key="GridCell.Tab.0.center" timestamp="1603993077348">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="63" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
     <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1603839932402">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="63" key="GridCell.Tab.0.left" timestamp="1603993077348">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="63" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
     <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1603839932402">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="63" key="GridCell.Tab.0.right" timestamp="1603993077348">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="63" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
     <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1603031951842">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="328" y="18" key="SettingsEditor" timestamp="1603992964968">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="328" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603992964968" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603031951842" />
     <state x="667" y="253" width="830" height="534" key="find.popup" timestamp="1603636163193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="830" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603636163193" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1603994757212">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1603994757212" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1602516079187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

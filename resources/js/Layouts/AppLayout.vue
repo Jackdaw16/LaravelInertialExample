@@ -1,44 +1,50 @@
 <template>
-    <div class="min-h-screen grid grid-cols-3 bg-black-800">
-        <div class="flex h-full min-h-screen grid-span-1 p-6">
-            <nav class="flex flex-col shadow-md rounded-lg bg-black-900 ">
+    <div class="min-h-screen grid grid-cols-12 bg-black-800">
+        <div class="flex h-full col-span-2 p-6">
+            <nav class="flex flex-col shadow-md rounded-lg bg-black-900">
                 <div class="flex flex-1 flex-col">
                     <!--Logo-->
                     <div class="p-6">
                         <inertia-link :href="route('dashboard')">
-                            <jet-application-mark class="block w-64 py-3 pr-3" />
+                            <jet-application-mark class="block w-32 py-3 pr-3" />
                         </inertia-link>
                     </div>
                     <!--Navigation Links-->
                     <div class="flex flex-col">
                         <comasy-nav-link class="text-white" href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-4 w-auto mx-4">
                                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                             </svg>
                             <span>Inicio</span>
                         </comasy-nav-link>
                         <comasy-nav-link href="/projects" :active="$page.currentRouteName.includes('projects')">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-4 w-auto mx-4">
                                 <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
                             </svg>
                             <span>Proyectos</span>
+                        </comasy-nav-link>
+                        <comasy-nav-link href="/" :active="$page.currentRouteName.includes('plugins')">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-4 w-auto mx-4">
+                                <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
+                            </svg>
+                            <span>Plugins</span>
                         </comasy-nav-link>
                     </div>
                 </div>
 
                 <nav class="flex flex-col content-end">
-                    <div class="block px-4 py-6 text-base text-comasy-pink-500">
+                    <div class="block px-4 py-6 text-sm text-comasy-pink-500">
                         Manage Account
                     </div>
                     <comasy-nav-link class="text-white" href="/user/profile" :active="$page.currentRouteName == 'profile.show'">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-4 w-auto mx-4">
                             <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
                         </svg>
                         <span>Perfil</span>
                     </comasy-nav-link>
                     <form @submit.prevent="logout">
                         <comasy-dropdown-link as="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="block h-6 w-auto mx-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="block h-4 w-auto mx-4">
                                 <path d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" fill="white"/>
                             </svg>
@@ -48,7 +54,6 @@
                     <div class="my-4"></div>
                 </nav>
             </nav>
-
         </div>
         <!--<nav class="bg-black-700 shadow">
 
@@ -227,21 +232,20 @@
             </div>
         </nav>-->
 
-        <!-- Page Heading -->
-        <!--<header class="bg-black-800 shadow">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-white">
-                <slot name="header"></slot>
-            </div>
-        </header>-->
-
         <!-- Page Content -->
-        <main class="grid-span-2">
+        <main class="col-span-10">
+            <div class="max-w-7xl mx-auto py-6 pr-4 text-white">
+                <div class="bg-black-900 shadow-md rounded-lg p-3 rounded">
+                    <slot name="header"></slot>
+                </div>
+
+            </div>
             <slot></slot>
         </main>
 
         <!-- Modal Portal -->
-        <portal-target name="modal" multiple>
-        </portal-target>
+        <!--<portal-target name="modal" multiple>
+        </portal-target>-->
     </div>
 </template>
 
