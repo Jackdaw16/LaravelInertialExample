@@ -1,29 +1,58 @@
 <template>
-    <div class="min-h-screen bg-black-900">
-        <nav class="bg-black-700 shadow">
-            <!-- Primary Navigation Menu -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between h-16">
-                    <div class="flex">
-                        <!-- Logo -->
-                        <div class="flex-shrink-0 flex items-center">
-                            <inertia-link :href="route('dashboard')">
-                                <jet-application-mark class="block h-9 w-auto" />
-                            </inertia-link>
-                        </div>
-
-                        <!-- Navigation Links -->
-                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <jet-nav-link class="text-white" href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
-                                Inicio
-                            </jet-nav-link>
-                            <jet-nav-link href="/projects" :active="$page.currentRouteName.includes('projects')">
-                                Proyectos
-                            </jet-nav-link>
-                        </div>
+    <div class="min-h-screen grid grid-cols-3 bg-black-800">
+        <div class="flex h-full min-h-screen grid-span-1 p-6">
+            <nav class="flex flex-col shadow-md rounded-lg bg-black-900 ">
+                <div class="flex flex-1 flex-col">
+                    <!--Logo-->
+                    <div class="p-6">
+                        <inertia-link :href="route('dashboard')">
+                            <jet-application-mark class="block w-64 py-3 pr-3" />
+                        </inertia-link>
                     </div>
+                    <!--Navigation Links-->
+                    <div class="flex flex-col">
+                        <comasy-nav-link class="text-white" href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                            </svg>
+                            <span>Inicio</span>
+                        </comasy-nav-link>
+                        <comasy-nav-link href="/projects" :active="$page.currentRouteName.includes('projects')">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                                <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                            </svg>
+                            <span>Proyectos</span>
+                        </comasy-nav-link>
+                    </div>
+                </div>
 
-                    <!-- Settings Dropdown -->
+                <nav class="flex flex-col content-end">
+                    <div class="block px-4 py-6 text-base text-comasy-pink-500">
+                        Manage Account
+                    </div>
+                    <comasy-nav-link class="text-white" href="/user/profile" :active="$page.currentRouteName == 'profile.show'">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto mx-4">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Perfil</span>
+                    </comasy-nav-link>
+                    <form @submit.prevent="logout">
+                        <comasy-dropdown-link as="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" class="block h-6 w-auto mx-4">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" fill="white"/>
+                            </svg>
+                            <span>Logout</span>
+                        </comasy-dropdown-link>
+                    </form>
+                    <div class="my-4"></div>
+                </nav>
+            </nav>
+
+        </div>
+        <!--<nav class="bg-black-700 shadow">
+
+                    &lt;!&ndash; Settings Dropdown &ndash;&gt;
                     <div class="hidden sm:flex sm:items-center sm:ml-6">
                         <div class="ml-3 relative">
                             <jet-dropdown align="right" width="48">
@@ -44,7 +73,7 @@
                                 </template>
 
                                 <template #content>
-                                    <!-- Account Management -->
+                                    &lt;!&ndash; Account Management &ndash;&gt;
                                     <div class="block px-4 py-2 text-xs text-gray-400">
                                         Manage Account
                                     </div>
@@ -59,13 +88,13 @@
 
                                     <div class="border-t border-gray-100"></div>
 
-                                    <!-- Team Management -->
+                                    &lt;!&ndash; Team Management &ndash;&gt;
                                     <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
                                         </div>
 
-                                        <!-- Team Settings -->
+                                        &lt;!&ndash; Team Settings &ndash;&gt;
                                         <jet-dropdown-link :href="route('teams.show', $page.user.current_team)">
                                             Team Settings
                                         </jet-dropdown-link>
@@ -76,7 +105,7 @@
 
                                         <div class="border-t border-gray-100"></div>
 
-                                        <!-- Team Switcher -->
+                                        &lt;!&ndash; Team Switcher &ndash;&gt;
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Switch Teams
                                         </div>
@@ -95,7 +124,7 @@
                                         <div class="border-t border-gray-100"></div>
                                     </template>
 
-                                    <!-- Authentication -->
+                                    &lt;!&ndash; Authentication &ndash;&gt;
                                     <form @submit.prevent="logout">
                                         <jet-dropdown-link as="button">
                                             Logout
@@ -106,7 +135,7 @@
                         </div>
                     </div>
 
-                    <!-- Hamburger -->
+                    &lt;!&ndash; Hamburger &ndash;&gt;
                     <div class="-mr-2 flex items-center sm:hidden">
                         <button @click="showingNavigationDropdown = ! showingNavigationDropdown" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                             <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -118,7 +147,7 @@
                 </div>
             </div>
 
-            <!-- Responsive Navigation Menu -->
+            &lt;!&ndash; Responsive Navigation Menu &ndash;&gt;
             <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
                 <div class="pt-2 pb-3 space-y-1">
                     <jet-responsive-nav-link :href="route('dashboard')" :active="$page.currentRouteName == 'dashboard'">
@@ -129,7 +158,7 @@
                     </jet-responsive-nav-link>
                 </div>
 
-                <!-- Responsive Settings Options -->
+                &lt;!&ndash; Responsive Settings Options &ndash;&gt;
                 <div class="pt-4 pb-1 border-t border-gray-200">
                     <div class="flex items-center px-4">
                         <div class="flex-shrink-0">
@@ -151,14 +180,14 @@
                             API Tokens
                         </jet-responsive-nav-link>
 
-                        <!-- Authentication -->
+                        &lt;!&ndash; Authentication &ndash;&gt;
                         <form method="POST" @submit.prevent="logout">
                             <jet-responsive-nav-link as="button">
                                 Logout
                             </jet-responsive-nav-link>
                         </form>
 
-                        <!-- Team Management -->
+                        &lt;!&ndash; Team Management &ndash;&gt;
                         <template v-if="$page.jetstream.hasTeamFeatures">
                             <div class="border-t border-gray-200"></div>
 
@@ -166,7 +195,7 @@
                                 Manage Team
                             </div>
 
-                            <!-- Team Settings -->
+                            &lt;!&ndash; Team Settings &ndash;&gt;
                             <jet-responsive-nav-link :href="route('teams.show', $page.user.current_team)" :active="$page.currentRouteName == 'teams.show'">
                                 Team Settings
                             </jet-responsive-nav-link>
@@ -177,7 +206,7 @@
 
                             <div class="border-t border-gray-200"></div>
 
-                            <!-- Team Switcher -->
+                            &lt;!&ndash; Team Switcher &ndash;&gt;
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 Switch Teams
                             </div>
@@ -196,17 +225,17 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>-->
 
         <!-- Page Heading -->
-        <header class="bg-black-800 shadow">
+        <!--<header class="bg-black-800 shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-white">
                 <slot name="header"></slot>
             </div>
-        </header>
+        </header>-->
 
         <!-- Page Content -->
-        <main>
+        <main class="grid-span-2">
             <slot></slot>
         </main>
 
@@ -223,9 +252,13 @@
     import JetDropdownLink from './../Jetstream/DropdownLink'
     import JetNavLink from './../Jetstream/NavLink'
     import JetResponsiveNavLink from './../Jetstream/ResponsiveNavLink'
+    import ComasyNavLink from "../ComasyComponents/ComasyNavLink";
+    import ComasyDropdownLink from "../ComasyComponents/ComasyDropdownLink";
 
     export default {
         components: {
+            ComasyDropdownLink,
+            ComasyNavLink,
             JetApplicationLogo,
             JetApplicationMark,
             JetDropdown,

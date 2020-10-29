@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyInputError.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyLabel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/comasyIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Mixins/ComasyInput.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Jetstream/ApplicationMark.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,11 +179,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documentos\laravel-inertial\LaravelInertialExample\public\img" />
       <recent name="D:\Documentos\laravel-inertial\resources\css" />
       <recent name="D:\Documentos\laravel-inertial" />
       <recent name="D:\Documentos\laravel-inertial\img" />
       <recent name="D:\Documentos\laravel-inertial\resources" />
-      <recent name="D:\Documentos\laravel-inertial\resources\img" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -231,7 +232,10 @@
       <workItem from="1603540941108" duration="15116000" />
       <workItem from="1603569005160" duration="2233000" />
       <workItem from="1603635960641" duration="3876000" />
-      <workItem from="1603640077052" duration="10901000" />
+      <workItem from="1603640077052" duration="11506000" />
+      <workItem from="1603714070915" duration="6761000" />
+      <workItem from="1603803748703" duration="11830000" />
+      <workItem from="1603910896324" duration="600000" />
     </task>
     <servers />
   </component>
@@ -243,22 +247,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603642069406" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603640239050">
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1603839932402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603640239050">
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1603839932402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603640239050">
+    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1603839932402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603640239050">
+    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1603839932402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1603031951842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

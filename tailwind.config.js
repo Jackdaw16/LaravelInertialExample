@@ -20,6 +20,7 @@ module.exports = {
                 'black-800' : '#252525',
                 'black-700' : '#353535',
                 'black-600' : '#505050',
+                'comasy-pink-500' : '#FF738E',
             },
 
             screens: {

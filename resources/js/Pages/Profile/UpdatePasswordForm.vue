@@ -29,9 +29,10 @@
                 </div>
 
                 <comasy-toast-list>
-                    <comasy-toast :message="form.error('current_password')" :is-notification="true"></comasy-toast>
-                    <ComasyToast :message="form.error('password')" :is-notification="true"></ComasyToast>
-                    <comasy-toast :message="form.error('password_confirmation')" :is-notification="true"></comasy-toast>
+                    <comasy-toast :message="form.error('current_password')" :is-notification="true" type="error"></comasy-toast>
+                    <comasy-toast :message="form.error('password')" :is-notification="true" type="error"></comasy-toast>
+                    <comasy-toast :message="form.error('password_confirmation')" :is-notification="true" type="error"></comasy-toast>
+                    <comasy-toast v-if="form.recentlySuccessful" :message="'Guardado'" :is-notification="true" type="success"></comasy-toast>
                 </comasy-toast-list>
             </template>
 

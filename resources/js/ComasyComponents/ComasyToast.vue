@@ -1,19 +1,34 @@
 <template>
-    <div v-if="message" class="border-l-8 mr-2 border-red-600 py-4 pr-4 m-4 bg-black-700 flex flex-row items-center rounded animated fadeInRight">
-        <div class="mx-2">
+    <div v-if="message && type === 'error'" class="border-l-8 mr-2 border-red-600 py-4 m-1 bg-black-700 flex flex-row items-center rounded animated fadeInRight">
+        <div class="ml-2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-8 w-auto text-red-600">
                 <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
         </div>
 
-        <p class="text-white">{{ message }}</p>
+        <p class="text-white mx-4">{{ message }}</p>
 
         <button class="ml-2" v-if="!isNotification">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto text-white">
                 <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
         </button>
+    </div>
 
+    <div v-else-if="message && type === 'success'" class="border-l-8 mr-2 border-green-600 py-4 m-1 bg-black-700 flex flex-row items-center rounded animated fadeInRight">
+        <div class="ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-8 auto text-green-600">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+        </div>
+
+        <p class="text-white mx-4">{{ message }}</p>
+
+        <button class="ml-2" v-if="!isNotification">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="block h-6 w-auto text-white">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
     </div>
 </template>
 
@@ -22,6 +37,6 @@
     export default {
         name: "comasy-toast",
         components: {Button},
-        props: ['message', 'isNotification']
+        props: ['message', 'isNotification', 'type']
     }
 </script>
