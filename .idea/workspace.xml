@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyInputError.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyLabel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToast.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyToastList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-inertial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-inertial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyTextInput.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/SaveButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Mixins/ComasyInput.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Profile/UpdatePasswordForm.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -105,7 +102,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
@@ -133,7 +129,6 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
@@ -177,6 +172,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Juan Alejandro\Documents\GitProjects\LaravelInertialExample" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documentos\laravel-inertial\resources\css" />
       <recent name="D:\Documentos\laravel-inertial" />
@@ -188,6 +186,16 @@
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="hot" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -203,6 +211,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.hot" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +241,8 @@
       <workItem from="1603569005160" duration="2233000" />
       <workItem from="1603635960641" duration="3876000" />
       <workItem from="1603640077052" duration="10901000" />
+      <workItem from="1603983071171" duration="651000" />
+      <workItem from="1603990797688" duration="1569000" />
     </task>
     <servers />
   </component>
@@ -243,21 +254,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603642069406" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603640239050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603992298489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603992298489" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603640239050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603992298489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603992298489" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603640239050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603992298489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603992298489" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603640239050">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603992298489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603992298489" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603640239050" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1603031951842">
       <screen x="0" y="0" width="1920" height="1040" />
