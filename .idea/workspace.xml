@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e3cee174-aad9-4a03-a0c3-c5f3749e58af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/comasyIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/comasyIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyDropdownLink.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ComasyComponents/ComasyNavLink.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Layouts/AppLayout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Projects/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Projects/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +189,16 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="hot" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -199,6 +212,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.hot" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +246,7 @@
       <workItem from="1603803748703" duration="11830000" />
       <workItem from="1603910896324" duration="600000" />
       <workItem from="1603992985107" duration="5548000" />
+      <workItem from="1604489675376" duration="7653000" />
     </task>
     <servers />
   </component>
@@ -243,26 +258,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603642069406" />
-    <state width="1323" height="63" key="GridCell.Tab.0.bottom" timestamp="1603993077348">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom" timestamp="1604500549833">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="63" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
-    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1323" height="63" key="GridCell.Tab.0.center" timestamp="1603993077348">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604500549833" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center" timestamp="1604500549833">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="63" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
-    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1323" height="63" key="GridCell.Tab.0.left" timestamp="1603993077348">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604500549833" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left" timestamp="1604500549833">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="63" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
-    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
-    <state width="1323" height="63" key="GridCell.Tab.0.right" timestamp="1603993077348">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604500549833" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right" timestamp="1604500549833">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="63" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603993077348" />
-    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603839932402" />
+    <state width="1877" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604500549833" />
     <state x="328" y="18" key="SettingsEditor" timestamp="1603992964968">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

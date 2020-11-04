@@ -7,8 +7,6 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
     ],
-    important: true,
-
     theme: {
         extend: {
             fontFamily: {
@@ -16,15 +14,29 @@ module.exports = {
             },
 
             colors: {
+                'primary' : '#E9EAEF',
+                'secondary' : '#212121',
+                'accent' : '#E9EAEF',
+
+                'white-100' : '#E9EAEF',
                 'black-900' : '#121212',
                 'black-800' : '#252525',
                 'black-700' : '#353535',
                 'black-600' : '#505050',
-                'comasy-pink-500' : '#FF738E',
             },
 
-            screens: {
-                'sm-0' : '320px',
+            gridTemplateColumns: {
+                '24' : 'repeat(24, minmax(0, 1fr));',
+            },
+
+            gridColumn: {
+                'span-24' : 'span 24 / span 24',
+                'span-23' : 'span 23 / span 23',
+                'span-22' : 'span 22 / span 22',
+                'span-21' : 'span 21 / span 21',
+                'span-20' : 'span 20 / span 20',
+                'span-19' : 'span 19 / span 19',
+                'span-18' : 'span 18 / span 18',
             }
         },
 
